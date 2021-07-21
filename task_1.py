@@ -5,7 +5,8 @@ def say_hello(value: int) -> str:
 
 
 if __name__ == "__main__":
-    input_value = int(input("Enter number: "))
-    func_return = say_hello(input_value)
-    if func_return:
-        print(func_return)
+    input_value = input("Enter number: ")
+    if input_value.isdigit():
+        func_return = say_hello(int(input_value))
+        if func_return:
+            print(func_return)

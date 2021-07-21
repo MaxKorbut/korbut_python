@@ -1,11 +1,11 @@
-def say_hello_to_vyacheslav(name):
+def say_hello_to_vyacheslav(name: str) -> str:
     """If input_name == Вячеслав: print Привет, Вячеслав else: print Нет такого имени"""
     if name == "Вячеслав":
-        print("Привет, Вячеслав")
+        return "Привет, Вячеслав"
     else:
-        print("Нет такого имени")
+        return "Нет такого имени"
 
 
 if __name__ == "__main__":
     input_name = input("Enter name: ")
-    say_hello_to_vyacheslav(input_name)
+    print(say_hello_to_vyacheslav(input_name))
